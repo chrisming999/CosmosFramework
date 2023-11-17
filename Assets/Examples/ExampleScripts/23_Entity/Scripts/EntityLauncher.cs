@@ -4,6 +4,7 @@ public class EntityLauncher : MonoBehaviour
 {
     void Start()
     {
+        Debug.Log("start");
         var launcherState = new EntityLauncherState();
         var gameState = new EntityGameState();
         CosmosEntry.ProcedureManager.AddProcedureNodes(gameState, launcherState);
